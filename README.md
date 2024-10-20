@@ -30,6 +30,23 @@ The Rule Engine is designed to evaluate user eligibility based on customizable r
   - Combine Rules: Combine multiple rules into one logical structure.
   - Evaluate Rules: Evaluate rules against user-provided data.
   - Dynamic Rule Creation: Create, modify, and combine rules dynamically using AST representation.
+
+ ## Extra Features Implemented
+
+In addition to the basic requirements, the following enhancements were made to the project:
+
+1. **Modifiable Rules**: 
+   - Users can modify existing rules dynamically through API endpoints, allowing for more flexible rule management.
+2. **User-Defined Functions**:
+   - Added the ability to define custom functions within rules for advanced conditions, allowing users to implement complex logic beyond basic comparisons.
+3. **Enhanced Error Handling**:
+   - Improved error handling and validation to ensure that rules follow the correct syntax and structure before being processed.
+4. **Database Integration**:
+   - Implemented a simple SQLite database to store created rules and their metadata, providing persistence across sessions.
+   - API endpoints for inserting and fetching rules from the database.
+5. **Detailed Logging**:
+   - Added logging functionality to track requests and rule evaluations for debugging purposes.
+
 # Technologies Used
    - Python 3.7+
    - Flask (Web framework)
